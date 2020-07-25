@@ -9,17 +9,14 @@ public class Student {
     private int tuitionBalance = 0;
     private static int costOfCourse = 600;
     private static int id = 1000;
-
-
+    
     //Constructor: name & year
     public Student() {
         Scanner in = new Scanner(System.in);
         System.out.print("Enter student first name: ");
         this.firstName = in.nextLine();
-
         System.out.print("Enter student last name: ");
         this.lastName = in.nextLine();
-
         System.out.print("1 - Freshman\n2 - Sophmore\n3 - Junior\n4 - Senior\nEnter student class level: ");
         this.gradeYear = in.nextInt();
 
@@ -72,5 +69,4 @@ public class Student {
                 "\nCourses Enrolled: " + courses +
                 "\nBalance: $" + tuitionBalance;
     }
-
 }
